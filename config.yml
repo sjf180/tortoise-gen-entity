@@ -1,0 +1,12 @@
+# tortoise-orm
+connections:
+  default: mysql://ts:ts@127.0.0.1:3306/ts
+apps:
+  ts:
+    default_connection: default
+intercept:
+  white_path: ['/auth']
+use_tz: false
+timezone: Asia/Shanghai
+view:
+  page: 10
